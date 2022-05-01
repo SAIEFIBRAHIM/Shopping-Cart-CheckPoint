@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/be3487ad83.js" crossorigin="anonymous"></script>
+    <title>Shopping Cart</title>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="notok" id="notok"><i class="fa-solid fa-check"></i> Wishlisted</div>
+        <div class="notno" id="notno"><i class="fa-solid fa-xmark"></i> Removed From wishlist</div>
+        <div class="notrem" id="notrem"><i class="fa-solid fa-trash"></i> Item Removed</div>
+        <i class="fa-solid fa-cart-shopping"></i>
+        Your Shopping Cart</div>
+    <hr class="headerline">
+</header>
+
+<div class="cartelements" id="cartelements">
+
+
+    <div class="headings" id="headings">
+        <div class="hproduct">
+            Product
+        </div>
+
+        <div class="huprice">
+            Unit Price
+        </div>
+        <div class="hqte">
+            Quantity
+        </div>
+        <div class="htotalnt">
+            Total (No Tax)
+        </div>
+        <div class="hwishlist">
+            Wishlist
+        </div>
+        <div class="hremove">
+            Remove
+        </div>
+    </div>
+
+
+    <div class="item" id="item1">
+        <div class="product">
+            <img src="/img/note11.jpg" alt="Infinix Note 11">
+            <p>Infinix Note 11 - 6GB RAM - 128GB ROM - Celestial Snow. Power Bank + Bouteille Isotherme</p>
+        </div>
+        <div class="uprice">
+            <H3 id="uprice1">672</H3>TND
+        </div>
+        <div class="qte">
+                <input type="number" id="qte1" name="qte1" min="1" max="20" value="1" >
+                <button id="qte1p">+</button>
+                <button id="qte1m">-</button>
+        </div>
+        <div class="totalht">
+            <H3 id="totalht1">672</H3> TND
+        </div>
+        <div class="wishlist">
+            <button id="wishlist1"><i class="fa-solid fa-heart fa-xl"></i></button>
+        </div>
+        <div class="remove">
+            <button id="remove1"><i class="fa-solid fa-trash fa-xl"></i></button>
+        </div>
+    </div>
+
+
+    <div class="item" id="item2">
+        <div class="product">
+            <img src="/img/inbook.jpg" alt="INBOOK">
+            <p>Infinix INBOOK X2 - Intel i7-1065G7- 512GB SSD - 8GB - Gris</p>
+        </div>
+        <div class="uprice">
+            <H3 id="uprice2">1848</H3>TND
+        </div>
+        <div class="qte">
+            <input type="number" id="qte2" name="qte1" min="1" max="20" value="1" >
+                <button id="qte2p">+</button>
+                <button id="qte2m">-</button>
+        </div>
+        <div class="totalht">
+            <H3 id="totalht2">1848</H3> TND
+        </div>
+        <div class="wishlist">
+            <button id="wishlist2"><i class="fa-solid fa-heart fa-xl"></i></button>
+        </div>
+        <div class="remove">
+            <button id="remove2"><i class="fa-solid fa-trash fa-xl"></i></button>
+        </div>
+    </div>
+
+
+    <div class="item" id="item3">
+        <div class="product">
+            <img src="/img/pods.jpg" alt="PODS">
+            <p>Infinix Ecouteurs Sans Fil - XE25 TWS - Kit bluetooth - 2000mAh - Power bank mode - Noir</p>
+        </div>
+        <div class="uprice">
+            <H3 id="uprice3">126</H3>TND
+        </div>
+        <div class="qte">
+            <input type="number" id="qte3" name="qte1" min="1" max="20" value="1" >
+            <button id="qte3p">+</button>
+            <button id="qte3m">-</button>
+        </div>
+        <div class="totalht">
+            <H3 id="totalht3">126</H3> TND
+        </div>
+        <div class="wishlist">
+            <button id="wishlist3"><i class="fa-solid fa-heart fa-xl"></i></button>
+        </div>
+        <div class="remove">
+            <button id="remove3"><i class="fa-solid fa-trash fa-xl"></i></button>
+        </div>
+    </div>
+
+    <div class="item" id="emptycart"><p class="emptyc">Your cart is empty try refreshing the page.</p></div>
+</div>
+<hr class="footerline">
+
+<div class="carttotal">
+    <div class="tts">SubTotal : <h2 id="tsubtotal"></h2><H3 class="symbol">TND</H3></div>
+    <div class="tts">Estimated Tax : <h2 id="ttax"></h2><H3 class="symbol">TND</H3></div>
+    <div class="tts">Estimated Shipping Fee : <h2 id="tshipping">11</h2><H3 class="symbol">TND</H3></div>
+    <div class="tts">Total : <h2 id="ttotal"></h2><H3 class="symbol">TND</H3></div>
+</div>
+
+<footer>
+<hr class="copyline">
+<p class="taxdoc">Please consider that the Tax rate in Tunisia is 19%.</p>
+<p class="copy">&copy 2022 Shopping Cart Model Created by SAIEF BRAHIM.</p>
+</footer>
+
+<script src="/js/main.js"></script>    
+</body>
+</html>

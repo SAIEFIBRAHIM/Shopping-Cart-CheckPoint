@@ -1,0 +1,463 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&family=Roboto:wght@300;400&display=swap');
+
+/* remove arrows of quantity input - chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* remove arrows of quantity input - mozilla */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* events notifications */
+.notok{
+    display: none;
+    background-color: rgb(0, 218, 11);
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 0 0 20vh 0;
+    padding: 1%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position:fixed;
+    animation-name: notification;
+    animation-duration: 4s;
+    opacity: 0;
+    right: 2vh;
+}
+.notno{
+    display: none;
+    background-color: rgb(233, 0, 0);
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 0 0 20vh 0;
+    padding: 1%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    animation-name: notification;
+    animation-duration: 4s;
+    opacity: 0;
+    right: 2vh;
+}
+.notrem{
+    display: none;
+    background-color: rgb(233, 0, 0);
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 0 0 20vh 0;
+    padding: 1%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    animation-name: notification;
+    animation-duration: 4s;
+    opacity: 0;
+    right: 2vh;
+}
+
+@keyframes notification {
+    0%   {opacity:0;}
+    50%  {opacity:1;}
+    100% {opacity:0;}
+    
+}
+
+
+body{
+    margin: 2% 10%;
+}
+
+/* header */
+.logo{
+    font-family: 'Karla', sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #f5c800;
+    margin-bottom: 8vh;
+}
+.fa-solid fa-cart-shopping{
+    color: #f5c800;
+}
+.headerline{
+    margin-bottom: 5vh;
+}
+
+.cartelements{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+
+/* headings style */
+.headings{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hproduct{
+    width: 40%;
+    text-align: left;
+    
+}
+.huprice{
+    width: 15%;
+    text-align: center;
+}
+.hqte{
+    width: 10%;
+    text-align: center;
+}
+.htotalnt{
+    width: 15%;
+    text-align: center;
+}
+.hwishlist{
+    width: 10%;
+    text-align: center;
+}
+.hremove{
+    width: 10%;
+    text-align: center;
+}
+
+
+/* Cart Classes */
+.item{
+    display: flex;
+    align-items: center;
+    transition: opacity 0.6s;
+}
+.fadeout{
+    opacity: 0;
+}
+.item img{
+    width: 30%;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 40%;
+    color: #727272;
+}
+.uprice{
+    display: flex;
+    width: 15%;
+    font-weight: 600;
+    justify-content: center;
+}
+.qte{
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.totalht{
+    display: flex;
+    width: 15%;
+    font-weight: 600;
+    justify-content: center;
+}
+ .wishlist{
+    display: flex;
+    width: 10%;
+    font-weight: 600;
+    justify-content: center;
+}
+.remove{
+    display: flex;
+    width: 10%;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.fa-solid fa-heart fa-xl{
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+/* Item1 style */
+#qte1{
+    width: 15%;
+    border-radius: 4px;
+    border-color: #000;
+    border-width: 1px;
+    padding: 0.2rem 0.3rem ;
+}
+#qte1p{
+    border-color: #fff;
+    background-color: #f5c800;
+    border-width: 1px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem ;
+}
+#qte1m{
+    border-color: #fff;
+    background-color: #f5c800;
+    border-width: 1px;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.1rem 0.6rem ;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+#uprice1{
+    margin: 0 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+#totalht1{
+    margin: 0 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+#wishlist1{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#wishlist1:hover{
+    color: #f5c800;
+}
+#wishlist1:active{
+    color: #f5c800b7;
+}
+#remove1{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#remove1:hover{
+    color: #f5c800;
+}
+#remove1:active{
+    color: #f5c800b7;
+}
+
+
+
+
+/* Item2 style */
+#qte2{
+    width: 15%;
+    border-radius: 4px;
+    border-color: #000;
+    border-width: 1px;
+    padding: 0.2rem 0.3rem ;
+}
+#qte2p{
+    border-color: #fff;
+    background-color: #f5c800;
+    border-width: 1px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem ;
+}
+#qte2m{
+    border-color: #fff;
+    background-color: #f5c800;
+    border-width: 1px;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.1rem 0.6rem ;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+#uprice2{
+    margin: 0 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+#totalht2{
+    margin: 0 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+#wishlist2{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#wishlist2:hover{
+    color: #f5c800;
+}
+#wishlist2:active{
+    color: #f5c800b7;
+}
+#remove2{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#remove2:hover{
+    color: #f5c800;
+}
+#remove2:active{
+    color: #f5c800b7;
+}
+
+
+
+
+/* Item3 style */
+#qte3{
+    width: 15%;
+    border-radius: 4px;
+    border-color: #000;
+    border-width: 1px;
+    padding: 0.2rem 0.3rem ;
+}
+#qte3p{
+    border-color: #fff;
+    background-color: #f5c800;
+    border-width: 1px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem ;
+}
+#qte3m{
+    border-color: #fff;
+    background-color: #f5c800;
+    border-width: 1px;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.1rem 0.6rem ;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+#uprice3{
+    margin: 0 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+#totalht3{
+    margin: 0 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+#wishlist3{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#wishlist3:hover{
+    color: #f5c800;
+}
+#wishlist3:active{
+    color: #f5c800b7;
+}
+#remove3{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#remove3:hover{
+    color: #f5c800;
+}
+#remove3:active{
+    color: #f5c800b7;
+}
+
+
+
+/* Total cart style */
+.carttotal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.symbol{
+    margin: 0 0 0 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+.tts{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #f5c800;
+    font-weight: 600;
+    margin: 1% 2.4rem 1% 0;
+    align-items: center;
+}
+
+#tsubtotal{
+    margin: 0 0 0 6rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+#ttax{
+    margin: 0 0 0 6.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+#tshipping{
+    margin: 0 0 0 7.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+#ttotal{
+    margin: 0 0 0 6rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+#emptycart{
+    display: none;
+    justify-content: center;
+    margin-top: 8vh;
+}
+.emptyc{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* footer */
+.taxdoc{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #727272;
+    margin-top: 4vh;
+}
+.copy{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #727272;
+}
+
+.footerline{
+    margin-top: 8vh;
+}
+.copyline{
+    margin: 2vh 0 0;
+}
